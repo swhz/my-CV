@@ -19,7 +19,6 @@ import Skill from './components/skill.js'
 import Project from './components/project.js'
 import Contact from './components/contact.js'
 
-
 // 配置导航
 class Sider extends React.Component {
     constructor(props) {
@@ -178,7 +177,6 @@ class Sider extends React.Component {
         )
     }
 }
-
 
 // 配置路由
 render((
