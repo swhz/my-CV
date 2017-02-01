@@ -372,6 +372,7 @@
     align-items: center;
     margin-bottom: 0.8em;
     color: dodgerblue;
+    cursor: pointer;
 }
 
 .contact-container a.main-item:hover {

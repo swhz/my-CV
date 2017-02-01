@@ -35,10 +35,10 @@ export default class Project extends React.Component {
                             <div className="project-item">
                                 <div className="item-title">
                                     在线个人简历（2017.1 - 至今）
-                                    <a className="item-link" href="#">
+                                    <a className="item-link" href="https://github.com/swhz/my-CV" target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
-                                    <a className="item-link" href="#">
+                                    <a className="item-link" href="https://swhzhuster.xin/my-CV" target="_blank">
                                         <i className="iconfont icon-link"></i>Demo
                                     </a>
                                 </div>
@@ -59,11 +59,8 @@ export default class Project extends React.Component {
                             <div className="project-item">
                                 <div className="item-title">
                                     微信小程序--模仿猫眼电影（2017.1）
-                                    <a className="item-link" href="#">
+                                    <a className="item-link" href="#" target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
-                                    </a>
-                                    <a className="item-link" href="#">
-                                        <i className="iconfont icon-link"></i>Demo
                                     </a>
                                 </div>
                                 <div className="item-info">
@@ -85,16 +82,62 @@ export default class Project extends React.Component {
                         <Timeline.Item>
                             <div className="project-item">
                                 <div className="item-title">
-                                    项目名字
-                                <a className="item-link"><i className="iconfont icon-link"></i>源代码</a>
-                                    <a className="item-link"><i className="iconfont icon-link"></i>Demo</a>
+                                    微信小程序--简单商城（2016.12）
+                                    <a className="item-link" href="#" target="_blank">
+                                        <i className="iconfont icon-link"></i>源代码
+                                    </a>
                                 </div>
                                 <div className="item-info">
                                     <div className="item-desc">
-                                        项目描述
-                                </div>
+                                        模仿爱拼宝宝app的商城项目（受限于api，功能比较简单），界面设计参照
+                                        官方app，交互效果良好。
+                                    </div>
                                     <div className="item-img">
-                                        <img src="https://swhzhuster.xin/images/my-CV/logo.png" alt="" />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin1.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin2.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin3.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin4.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
+                                    </div>
+                                </div>
+                            </div>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <div className="project-item">
+                                <div className="item-title">
+                                    微信小程序--简单商城（2016.12）
+                                    <a className="item-link" href="#" target="_blank">
+                                        <i className="iconfont icon-link"></i>源代码
+                                    </a>
+                                    <a className="item-link" href="#" target="_blank">
+                                        <i className="iconfont icon-link"></i>Demo
+                                    </a>
+                                </div>
+                                <div className="item-info">
+                                    <div className="item-desc">
+                                        模仿爱拼宝宝app的商城项目（受限于api，功能比较简单），界面设计参照
+                                        官方app，交互效果良好。
+                                    </div>
+                                    <div className="item-img">
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin1.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin2.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin3.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin4.png"
+                                         style={{width:140}}
+                                         onClick={this.showModal} />
                                     </div>
                                 </div>
                             </div>
