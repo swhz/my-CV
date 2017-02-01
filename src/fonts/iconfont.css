@@ -1,0 +1,83 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1485850871722'); /* IE9*/
+  src: url('iconfont.eot?t=1485850871722#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1485850871722') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1485850871722') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1485850871722#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qq:before { content: "\e617"; }
+
+.icon-link:before { content: "\e60a"; }
+
+.icon-coordinate:before { content: "\e650"; }
+
+.icon-experience:before { content: "\e6de"; }
+
+.icon-english1:before { content: "\e61e"; }
+
+.icon-jianli:before { content: "\e61a"; }
+
+.icon-index:before { content: "\e637"; }
+
+.icon-github:before { content: "\e735"; }
+
+.icon-state:before { content: "\e621"; }
+
+.icon-weixin:before { content: "\e68b"; }
+
+.icon-weibo:before { content: "\e653"; }
+
+.icon-Programming:before { content: "\e6ab"; }
+
+.icon-project:before { content: "\e604"; }
+
+.icon-contact:before { content: "\e6cc"; }
+
+.icon-html:before { content: "\e601"; }
+
+.icon-jquery:before { content: "\e605"; }
+
+.icon-about:before { content: "\e60f"; }
+
+.icon-intention:before { content: "\e692"; }
+
+.icon-education:before { content: "\e694"; }
+
+.icon-email:before { content: "\e60c"; }
+
+.icon-javascript:before { content: "\e608"; }
+
+.icon-skill:before { content: "\e651"; }
+
+.icon-tools:before { content: "\e603"; }
+
+.icon-University:before { content: "\e600"; }
+
+.icon-sex:before { content: "\e638"; }
+
+.icon-age:before { content: "\e681"; }
+
+.icon-english:before { content: "\e643"; }
+
+.icon-zhihu:before { content: "\e609"; }
+
+.icon-css:before { content: "\e60e"; }
+
+.icon-sass:before { content: "\e646"; }
+
+.icon-xiaochengxu:before { content: "\e606"; }
+
+.icon-react:before { content: "\e770"; }
+
+.icon-frame:before { content: "\e607"; }
+
