@@ -326,6 +326,10 @@
     width: 100%;
 }
 
+.project-container .ant-timeline {
+    width: 100%;
+}
+
 .project-container .item-title {
     font-size: 2em;
     color: dodgerblue;
@@ -345,6 +349,7 @@
 
 .project-container .item-info {
     margin:10px 40px 10px 0;
+    /*width: 100%;*/
 }
 
 .project-container .item-desc {
@@ -358,6 +363,7 @@
     border: 2px solid antiquewhite;
     cursor: pointer;
     margin-right: 10px;
+    max-height: 245px;
 }
 
 .contact-container .contact-main,

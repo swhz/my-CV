@@ -15,7 +15,7 @@ export default class Project extends React.Component {
     showModal(e) {
         this.setState({
             visible: true,
-            src: e.target.src
+            src: e.currentTarget.getAttribute("data-src")  //兼容IE
         })
     }
 
@@ -48,8 +48,8 @@ export default class Project extends React.Component {
                                         库和框架设计，语法采用ES6、ES7，运用webpack等模块打包工具进行编译打包。
                                     </div>
                                     <div className="item-img">
-                                        <img src="https://swhzhuster.xin/images/my-CV/my-CV.png"
-                                            style={{ width: 300 }}
+                                        <img src="https://swhzhuster.xin/images/my-CV/my-CV-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/my-CV.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -69,11 +69,11 @@ export default class Project extends React.Component {
                                         （早于微信小程序上线），界面设计合理，交互效果良好。
                                     </div>
                                     <div className="item-img">
-                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan1.png"
-                                            style={{width:140}}
+                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan1-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/maoyan1.png"
                                             onClick={this.showModal} />
-                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan3.png"
-                                            style={{width:140}}
+                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan3-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/maoyan3.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -93,18 +93,18 @@ export default class Project extends React.Component {
                                         官方app，交互效果良好。
                                     </div>
                                     <div className="item-img">
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin1.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin2.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin3.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin4.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin1-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/aipin1.png"
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin2-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/aipin2.png"
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin3-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/aipin3.png"
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/aipin4-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/aipin4.png"
+                                            onClick={this.showModal} />
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +112,26 @@ export default class Project extends React.Component {
                         <Timeline.Item>
                             <div className="project-item">
                                 <div className="item-title">
-                                    微信小程序--简单商城（2016.12）
+                                    微信小程序--综合练习项目（2016.12）
+                                    <a className="item-link" href="#" target="_blank">
+                                        <i className="iconfont icon-link"></i>源代码
+                                    </a>
+                                </div>
+                                <div className="item-info">
+                                    <div className="item-desc">
+                                        运用小程序实现了2048小游戏、canvas时钟以及Todolist，界面设计简洁，
+                                        游戏试玩良好，时钟稳步运行，Todolist配有简单的后台接口，无明显bug。
+                                    </div>
+                                    <div className="item-img">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <div className="project-item">
+                                <div className="item-title">
+                                    前端游戏练习综合（2016.7--2016.11）
                                     <a className="item-link" href="#" target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
@@ -122,23 +141,22 @@ export default class Project extends React.Component {
                                 </div>
                                 <div className="item-info">
                                     <div className="item-desc">
-                                        模仿爱拼宝宝app的商城项目（受限于api，功能比较简单），界面设计参照
-                                        官方app，交互效果良好。
+                                        前端学习过程中做过的小游戏demo集合，包括贪食蛇、2048、骰子游戏等，使用原生js、
+                                        jquery以及canvas编写，游戏试玩良好，无明显bug。
                                     </div>
                                     <div className="item-img">
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin1.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin2.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin3.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
-                                        <img src="https://swhzhuster.xin/images/my-CV/aipin4.png"
-                                         style={{width:140}}
-                                         onClick={this.showModal} />
+                                        
                                     </div>
+                                </div>
+                            </div>
+                        </Timeline.Item>
+                         <Timeline.Item>
+                             <div className="project-item">
+                                <div className="item-title">
+                                    前端学习练习综合（2016.4--2016.11）
+                                    <a className="item-link" href="#" target="_blank">
+                                        <i className="iconfont icon-link"></i>源代码
+                                    </a>
                                 </div>
                             </div>
                         </Timeline.Item>
@@ -148,7 +166,7 @@ export default class Project extends React.Component {
                     visible={this.state.visible}
                     onCancel={this.handleCancel}>
                     <div className="big-img">
-                        <img src={this.state.src} style={{ maxWidth: '100%' }} />
+                        <img src={this.state.src} style={{ maxWidth: '100%',maxHeight: '100%',width:'auto',height:'auto' }} />
                     </div>
                 </Modal>
             </div>

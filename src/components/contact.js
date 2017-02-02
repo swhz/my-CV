@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
     showModal(e) {
         this.setState({
             visible: true,
-            src: e.currentTarget.dataset.src
+            src: e.currentTarget.getAttribute("data-src") //兼容IE
         })
     }
 

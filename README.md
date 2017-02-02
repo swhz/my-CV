@@ -7,4 +7,7 @@ demo: [https://swhzhuster.xin/my-CV](https://swhzhuster.xin/my-CV)
 ## 本地运行
 > npm install
 
-> npm run dev
+> npm start
+
+## 本地编译
+> npm run build
