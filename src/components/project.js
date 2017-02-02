@@ -38,7 +38,7 @@ export default class Project extends React.Component {
                                     <a className="item-link" href="https://github.com/swhz/my-CV" target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
-                                    <a className="item-link" href="https://swhzhuster.xin/my-CV" target="_blank">
+                                    <a className="item-link" href="http://swhzhuster.xin/my-CV" target="_blank">
                                         <i className="iconfont icon-link"></i>Demo
                                     </a>
                                 </div>

@@ -9,7 +9,22 @@
 <title>舒伟增的简历</title>
 </head>
 <body>
-    <div id="app">loading...</div>
+    <div id="app">
+        <p style="color: dodgerblue;font-size: 30px;margin: 200px auto;text-align: center;">页面加载中...</p>
+    </div>
+    <script>
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+        var isOpera = userAgent.indexOf("Opera") > -1; //判断是否opera浏览器
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+            if (fIEVersion <= 9) {
+                alert('你的浏览器版本过低，简历页面无法正常显示，请用高版本浏览器打开或用手机浏览web版')
+            }
+        }
+    </script>
     <script src="bundle.js"></script>
 </body>
 </html>
