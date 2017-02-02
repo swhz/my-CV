@@ -27,7 +27,6 @@ class Sider extends React.Component {
             collapse: true,
             current: 'home',
             num: 0
-            // username: ''
         }
         this.onCollapseChange = this.onCollapseChange.bind(this)
         this.handleClick = this.handleClick.bind(this)

@@ -13,6 +13,7 @@
         <p style="color: dodgerblue;font-size: 30px;margin: 200px auto;text-align: center;">页面加载中...</p>
     </div>
     <script>
+        //检查浏览器是否是低版本IE浏览器
         var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
         var isOpera = userAgent.indexOf("Opera") > -1; //判断是否opera浏览器
         var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器

@@ -72,8 +72,20 @@ export default class Project extends React.Component {
                                         <img src="https://swhzhuster.xin/images/my-CV/maoyan1-small.png"
                                             data-src="https://swhzhuster.xin/images/my-CV/maoyan1.png"
                                             onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan2-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/maoyan2.png"
+                                            onClick={this.showModal} />
                                         <img src="https://swhzhuster.xin/images/my-CV/maoyan3-small.png"
                                             data-src="https://swhzhuster.xin/images/my-CV/maoyan3.png"
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan4-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/maoyan4.png"
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan5-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/maoyan5.png"
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/maoyan6-small.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/maoyan6.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
