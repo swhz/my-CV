@@ -94,16 +94,21 @@
     transition: all .3s;
 }
 
+.layout-aside .layout-flip .ant-btn {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
 .layout-aside .layout-flip .back {
     position: absolute;
     height: 100%;
-    left: 10px;
+    left: 16px;
 }
 
 .layout-aside .layout-flip .next {
     position: absolute;
     height: 100%;
-    right: 10px;
+    right: 16px;
 }
 
 .layout-aside .layout-main {
@@ -261,7 +266,7 @@
 .about-container .item, 
 .skill-container .item {
     width: 20em;
-    height: 7em;
+    height: 6.5em;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
@@ -376,7 +381,7 @@
     display: -webkit-flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.7em;
     color: dodgerblue;
     cursor: pointer;
 }

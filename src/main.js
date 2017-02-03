@@ -32,6 +32,7 @@ class Sider extends React.Component {
         this.handleClick = this.handleClick.bind(this)
     }
 
+    //在完成首次渲染之前调用（首次加载或刷新页面），根据url的hash值改变state，具体表现为侧边栏选中项与页面渲染页相对应
     componentWillMount() {
         const newkey = window.location.hash.split('#/')[1] || 'home'
         const keyArray = ['home', 'about', 'skill', 'project', 'contact']
@@ -47,47 +48,35 @@ class Sider extends React.Component {
         })
     }
 
-    handleClick(e) {
-        const keyArray = ['home', 'about', 'skill', 'project', 'contact']
-        let num = 0
-        keyArray.forEach((key, index) => {
-            if (e.key == key) {
-                num = index
-            }
-        })
-        this.setState({
-            current: e.key,
-            num,
-        })
+    //完成渲染新的props或者state后调用（切换路由），路由变化引发hash值变化，通过hash值与之前
+    //状态属性作相应比较，如有变化则改变state，以达到侧边栏选中项与页面渲染页相对应
+    componentDidUpdate(prevProps, prevState) {
+        const newkey = window.location.hash.split('#/')[1] || 'home'
+        if (newkey != prevState.current) {
+            const keyArray = ['home', 'about', 'skill', 'project', 'contact']
+            let num = 0
+            keyArray.forEach((key, index) => {
+                if (newkey == key) {
+                    num = index
+                }
+            })
+            this.setState({
+                current: newkey,
+                num,
+            })
+        }
+    }
+ 
+    //路由切换时，初始化容器滚动条位置
+    handleClick() {
         this.scroll.scrollTop = 0
     }
 
+    //侧边栏状态切换
     onCollapseChange() {
         this.setState({
             collapse: !this.state.collapse,
         })
-    }
-
-    onFlip(n) {
-        return (event) => {
-            const keyArray = ['home', 'about', 'skill', 'project', 'contact']
-            const current = this.state.current
-            let num = this.state.num
-            if (n == -1) {
-                if (num > 0) {
-                    num--
-                }
-            } else {
-                if (num < 4) {
-                    num++
-                }
-            }
-            this.setState({
-                current: keyArray[num],
-                num,
-            })
-            this.scroll.scrollTop = 0
-        }
     }
 
     render() {
@@ -105,7 +94,7 @@ class Sider extends React.Component {
                         defaultSelectedKeys={['home']}
                         selectedKeys={[this.state.current]}
                         onClick={this.handleClick}
-                        >
+                    >
                         <Menu.Item key="home">
                             <Link to="/">
                                 <i className="iconfont icon-index"></i>
@@ -142,14 +131,14 @@ class Sider extends React.Component {
                     </div>
                 </aside>
                 <div className="layout-flip">
-                    <div className="back" onClick={this.onFlip(-1)}>
+                    <div className="back" onClick={this.handleClick}>
                         <Link to={num > 0 ? routerArray[num - 1] : routerArray[num]}>
                             <Button type="primary">
                                 <Icon type="left" />上一页
                             </Button>
                         </Link>
                     </div>
-                    <div className="next" onClick={this.onFlip(1)}>
+                    <div className="next" onClick={this.handleClick}>
                         <Link to={num < 4 ? routerArray[num + 1] : routerArray[num]}>
                             <Button type="primary">
                                 <Icon type="right" />下一页
@@ -157,7 +146,7 @@ class Sider extends React.Component {
                         </Link>
                     </div>
                 </div>
-                <div className="layout-main" ref={(div) => { this.scroll = div } }>
+                <div className="layout-main" ref={(div) => { this.scroll = div }}>
                     <ReactCSSTransitionGroup
                         transitionName="transitionWrapper"
                         component="div"
