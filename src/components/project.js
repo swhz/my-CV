@@ -30,7 +30,7 @@ export default class Project extends React.Component {
             <div className="project-container">
                 <h1 className="project-title">项目经验</h1>
                 <div className="project-content">
-                    <Timeline>
+                    <Timeline pending={<a href="https://github.com/swhz" target="_blank" className="item-title">更多项目内容尽在github（点击进入）</a>}>
                         <Timeline.Item>
                             <div className="project-item">
                                 <div className="item-title">
@@ -162,13 +162,54 @@ export default class Project extends React.Component {
                                 </div>
                             </div>
                         </Timeline.Item>
-                         <Timeline.Item>
-                             <div className="project-item">
+                        <Timeline.Item>
+                            <div className="project-item">
                                 <div className="item-title">
-                                    前端学习练习综合（2016.4--2016.11）
-                                    <a className="item-link" href="#" target="_blank">
+                                    Matlab项目（2015.3--2015.5）
+                                    <a className="item-link" href="https://github.com/swhz/matlab-project" target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
+                                </div>
+                                <div className="item-info">
+                                    <div className="item-desc">
+                                        运用matlab编写的建筑热平衡计算程序以及一些matlab练习项目，其中建筑热平衡计算程序
+                                        是本人毕业设计的程序部分，因计算结果准确而丰富，获得了导师的赞赏。（下图是部分计算结果图表）
+                                    </div>
+                                    <div className="item-img">
+                                        <img src="https://swhzhuster.xin/images/my-CV/matlab1.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/matlab1.png"
+                                            style={{height:140,width:'auto'}}
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/matlab2.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/matlab2.png"
+                                            style={{height:140,width:'auto'}}
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/matlab3.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/matlab3.png"
+                                            style={{height:140,width:'auto'}}
+                                            onClick={this.showModal} />
+                                        <img src="https://swhzhuster.xin/images/my-CV/matlab4.png"
+                                            data-src="https://swhzhuster.xin/images/my-CV/matlab4.png"
+                                            style={{height:140,width:'auto'}}
+                                            onClick={this.showModal} />
+                                    </div>
+                                </div>
+                            </div>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <div className="project-item">
+                                <div className="item-title">
+                                    Fortran项目（2013.12--2014.2）
+                                    <a className="item-link" href="https://github.com/swhz/Fortran-project" target="_blank">
+                                        <i className="iconfont icon-link"></i>源代码
+                                    </a>
+                                </div>
+                                <div className="item-info">
+                                    <div className="item-desc">
+                                        运用Fortran语言编写的计算力学项目和板壳力学项目，其中计算力学项目包含二维和三维的桁架、
+                                        钢架以及等参元的力学计算程序，计算结果准确，通用性良好；板壳力学项目是为解决大挠度问题
+                                        而编写的计算程序，其计算结果与软件计算结果一致。（由于计算结果都是纯数据，就不贴图了）
+                                    </div>
                                 </div>
                             </div>
                         </Timeline.Item>

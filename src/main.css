@@ -341,10 +341,11 @@
 }
 
 .project-container .item-link {
+    color: dimgray;
     font-size: 0.5em;
     padding: 0.1em 0.3em;
     margin-left: 10px;
-    border: 1.5px solid deepskyblue;
+    border: 1.5px solid darkgray;
     border-radius: 10px;
 }
 
@@ -367,6 +368,7 @@
 .project-container .item-img img{
     border: 2px solid antiquewhite;
     cursor: pointer;
+    cursor: zoom-in;
     margin-right: 10px;
     max-height: 245px;
 }
