@@ -11,7 +11,7 @@ export default class Project extends React.Component {
         this.showModal = this.showModal.bind(this)
         this.handleCancel = this.handleCancel.bind(this)
     }
-   
+
     showModal(e) {
         this.setState({
             visible: true,
@@ -59,7 +59,8 @@ export default class Project extends React.Component {
                             <div className="project-item">
                                 <div className="item-title">
                                     微信小程序--模仿猫眼电影（2017.1）
-                                    <a className="item-link" href="https://github.com/swhz/wechat-small-program/tree/master/weapp-film" 
+                                    <a className="item-link"
+                                        href="https://github.com/swhz/wechat-small-program/tree/master/weapp-film"
                                         target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
@@ -126,7 +127,9 @@ export default class Project extends React.Component {
                             <div className="project-item">
                                 <div className="item-title">
                                     微信小程序--综合练习项目（2016.12）
-                                    <a className="item-link" href="https://github.com/swhz" target="_blank">
+                                    <a className="item-link"
+                                        href="https://github.com/swhz/wechat-small-program/tree/master/wechat-practice"
+                                        target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
                                 </div>
@@ -136,7 +139,15 @@ export default class Project extends React.Component {
                                         游戏试玩良好，时钟稳步运行，Todolist配有简单的后台接口，无明显bug。
                                     </div>
                                     <div className="item-img">
-                                        
+                                        <img src="http://swhzhuster.xin/images/my-CV/2048-small.png"
+                                            data-src="http://swhzhuster.xin/images/my-CV/2048.png"
+                                            onClick={this.showModal} />
+                                        <img src="http://swhzhuster.xin/images/my-CV/clock-small.png"
+                                            data-src="http://swhzhuster.xin/images/my-CV/clock.png"
+                                            onClick={this.showModal} />
+                                        <img src="http://swhzhuster.xin/images/my-CV/todolist-small.png"
+                                            data-src="http://swhzhuster.xin/images/my-CV/todolist.png"
+                                            onClick={this.showModal} />
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +169,7 @@ export default class Project extends React.Component {
                                         jquery以及canvas编写，游戏试玩良好，无明显bug。
                                     </div>
                                     <div className="item-img">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -233,19 +244,19 @@ export default class Project extends React.Component {
                                     <div className="item-img">
                                         <img src="http://swhzhuster.xin/images/my-CV/matlab1.png"
                                             data-src="http://swhzhuster.xin/images/my-CV/matlab1.png"
-                                            style={{height:140,width:'auto'}}
+                                            style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
                                         <img src="http://swhzhuster.xin/images/my-CV/matlab2.png"
                                             data-src="http://swhzhuster.xin/images/my-CV/matlab2.png"
-                                            style={{height:140,width:'auto'}}
+                                            style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
                                         <img src="http://swhzhuster.xin/images/my-CV/matlab3.png"
                                             data-src="http://swhzhuster.xin/images/my-CV/matlab3.png"
-                                            style={{height:140,width:'auto'}}
+                                            style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
                                         <img src="http://swhzhuster.xin/images/my-CV/matlab4.png"
                                             data-src="http://swhzhuster.xin/images/my-CV/matlab4.png"
-                                            style={{height:140,width:'auto'}}
+                                            style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -274,7 +285,7 @@ export default class Project extends React.Component {
                     visible={this.state.visible}
                     onCancel={this.handleCancel}>
                     <div className="big-img">
-                        <img src={this.state.src} style={{ maxWidth: '100%',maxHeight: '100%',width:'auto',height:'auto' }} />
+                        <img src={this.state.src} style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }} />
                     </div>
                 </Modal>
             </div>
