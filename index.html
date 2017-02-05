@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <title>舒伟增的简历</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico"/>
+<title>舒伟增的简历</title>
 </head>
-
 <body>
     <div id="app">
         <p style="color: dodgerblue;font-size: 30px;margin: 200px auto;text-align: center;">页面加载中...</p>
     </div>
-<script>
+    <script>
+        //检查浏览器是否是低版本IE浏览器
         var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
         var isOpera = userAgent.indexOf("Opera") > -1; //判断是否opera浏览器
         var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
@@ -23,11 +22,10 @@
             reIE.test(userAgent);
             var fIEVersion = parseFloat(RegExp["$1"]);
             if (fIEVersion <= 9) {
-                alert('你的浏览器版本过低，简历页面无法正常显示，请用高版本浏览器打开或用手机浏览web版')
+                alert('你的浏览器版本过低，简历页面无法正常显示，请用高版本浏览器打开或用手机横屏浏览')
             }
         }
     </script>
-<script src="bundle.js"></script>
+    <script src="bundle.js"></script>
 </body>
-
 </html>
