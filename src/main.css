@@ -156,36 +156,50 @@
     padding-right: 40px;*/
 }
 
-.home-container {
+.home-container,
+.about-container, 
+.skill-container, 
+.project-container, 
+.contact-container {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    font-size: 1.3vw;
+    font-family: Lato,"Microsoft YaHei",sans-serif;
+    height: 100%;
+    line-height: 1.15;
+}
+
+.home-container {
     align-items: center;
+    height: 85vh;
 }
 
 .home-container .avatar-img {
-    width: 200px;
-    height: 280px;
+    width: 30vh;
+    height: 38vh;
     display: flex;
     display: -webkit-flex;
     align-items: center;
 }
 
 .home-container .avatar {
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 30vh;
     box-sizing: border-box;
     border: 10px solid dodgerblue;
     border-radius: 50%;
 }
 
 .home-container .home-info {
+    flex: auto;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
     align-items: center;
-    font-size: 16px;
-    font-family: Lato,"Microsoft YaHei",sans-serif;
+    justify-content: center;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 .home-container .my-name {
@@ -216,19 +230,6 @@
 
 .home-container .my-email:hover {
     color: antiquewhite;
-}
-
-.about-container, 
-.skill-container, 
-.project-container, 
-.contact-container {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    font-size: 1.3vw;
-    font-family: Lato,"Microsoft YaHei",sans-serif;
-    height: 100%;
-    line-height: 1.15;
 }
 
 .about-container .about-title, 
