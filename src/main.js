@@ -6,7 +6,7 @@ import { render } from 'react-dom'
 import { Router, Route, Link, hashHistory, browserHistory, IndexRoute, Redirect, IndexLink } from 'react-router'
 
 // 引入Antd的导航组件
-import { Menu, Icon, Button } from 'antd'
+import { Menu, Icon, Button,Modal } from 'antd'
 const SubMenu = Menu.SubMenu
 
 // 引入主体样式文件
@@ -26,14 +26,18 @@ class Sider extends React.Component {
         this.state = {
             collapse: true,
             current: 'home',
-            num: 0
+            num: 0,
+            visible: false
         }
         this.onCollapseChange = this.onCollapseChange.bind(this)
         this.handleClick = this.handleClick.bind(this)
+        this.handleCancel = this.handleCancel.bind(this)
     }
 
     //在完成首次渲染之前调用（首次加载或刷新页面），根据url的hash值改变state，具体表现为侧边栏选中项与页面渲染页相对应
     componentWillMount() {
+        const width = window.screen.availWidth
+        const height = window.screen.availHeight
         const newkey = window.location.hash.split('#/')[1] || 'home'
         const keyArray = ['home', 'about', 'skill', 'project', 'contact']
         let num = 0
@@ -46,6 +50,11 @@ class Sider extends React.Component {
             current: newkey,
             num,
         })
+        if(height > width) {
+            this.setState({
+                visible: true
+            })
+        }
     }
 
     //完成渲染新的props或者state后调用（切换路由），路由变化引发hash值变化，通过hash值与之前
@@ -76,6 +85,13 @@ class Sider extends React.Component {
     onCollapseChange() {
         this.setState({
             collapse: !this.state.collapse,
+        })
+    }
+
+    //隐藏模态框
+    handleCancel() {
+        this.setState({
+            visible: false
         })
     }
 
@@ -161,6 +177,11 @@ class Sider extends React.Component {
                         </div>
                     </ReactCSSTransitionGroup>
                 </div>
+                <Modal title="" footer=""
+                    visible={this.state.visible}
+                    onCancel={this.handleCancel}>
+                    <p style={{textAlign:'center'}}>横屏浏览效果更佳哦！</p>
+                </Modal>
             </div>
         )
     }
