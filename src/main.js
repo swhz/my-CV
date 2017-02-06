@@ -167,8 +167,8 @@ class Sider extends React.Component {
                         transitionName="transitionWrapper"
                         component="div"
                         className="transitionWrapper"
-                        transitionEnterTimeout={300}
-                        transitionLeaveTimeout={300}>
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={500}>
                         <div key={this.props.location.pathname}
                             style={{ position: "absolute", width: "100%" }}>
                             {
