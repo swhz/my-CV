@@ -133,10 +133,10 @@
 
 .transitionWrapper-enter{
     opacity: 0.01;
-    transition: all 500ms ease-in;
-    transform: rotate(60deg);
-    -webkit-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
+    transition: all 500ms ease;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
 }
  
 .transitionWrapper-enter.transitionWrapper-enter-active{
@@ -148,7 +148,7 @@
  
 .transitionWrapper-leave{
     opacity: 1;
-    transition: all 500ms ease-in;
+    transition: all 500ms ease;
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -156,9 +156,9 @@
  
 .transitionWrapper-leave.transitionWrapper-leave-active{
     opacity: 0;
-    transform: rotate(-60deg);
-    -webkit-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
 }
  
 .transitionWrapper{

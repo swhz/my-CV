@@ -97,7 +97,9 @@ export default class Project extends React.Component {
                             <div className="project-item">
                                 <div className="item-title">
                                     微信小程序--简单商城（2016.12）
-                                    <a className="item-link" href="https://github.com/swhz/wechat-small-program" target="_blank">
+                                    <a className="item-link" 
+                                    href="https://github.com/swhz/wechat-small-program/tree/master/happyshopping" 
+                                    target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
                                 </div>
@@ -136,7 +138,7 @@ export default class Project extends React.Component {
                                 <div className="item-info">
                                     <div className="item-desc">
                                         运用小程序实现了2048小游戏、canvas时钟以及Todolist，界面设计简洁，
-                                        游戏试玩良好，时钟稳步运行，Todolist配有简单的后台接口，无明显bug。
+                                        游戏试玩良好，时钟稳步运行，Todolist配有简单的后台接口（json-server），可同步。
                                     </div>
                                     <div className="item-img">
                                         <img src="http://swhzhuster.xin/images/my-CV/2048-small.png"
@@ -156,20 +158,28 @@ export default class Project extends React.Component {
                             <div className="project-item">
                                 <div className="item-title">
                                     前端游戏练习综合（2016.7--2016.11）
-                                    <a className="item-link" href="https://github.com/swhz" target="_blank">
+                                    <a className="item-link" href="https://github.com/swhz/game-project" target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
-                                    <a className="item-link" href="https://github.com/swhz" target="_blank">
+                                    <a className="item-link" href="http://swhzhuster.xin/game" target="_blank">
                                         <i className="iconfont icon-link"></i>Demo
                                     </a>
                                 </div>
                                 <div className="item-info">
                                     <div className="item-desc">
                                         前端学习过程中做过的小游戏demo集合，包括贪食蛇、2048、骰子游戏等，使用原生js、
-                                        jquery以及canvas编写，游戏试玩良好，无明显bug。
+                                        jquery以及canvas编写，游戏试玩效果良好。
                                     </div>
                                     <div className="item-img">
-
+                                         <img src="http://swhzhuster.xin/images/my-CV/2048g-small.png"
+                                            data-src="http://swhzhuster.xin/images/my-CV/2048g.png"
+                                            onClick={this.showModal} />
+                                         <img src="http://swhzhuster.xin/images/my-CV/snake-small.png"
+                                            data-src="http://swhzhuster.xin/images/my-CV/snake.png"
+                                            onClick={this.showModal} />
+                                         <img src="http://swhzhuster.xin/images/my-CV/craps-small.png"
+                                            data-src="http://swhzhuster.xin/images/my-CV/craps.png"
+                                            onClick={this.showModal} />
                                     </div>
                                 </div>
                             </div>
@@ -177,15 +187,12 @@ export default class Project extends React.Component {
                         <Timeline.Item>
                             <div className="project-item">
                                 <div className="item-title">
-                                    团队项目--尚宜家O2O项目（2015.11--2016.6）
-                                    <a className="item-link" href="#" target="_blank">
-                                        <i className="iconfont icon-link"></i>Demo
-                                    </a>
+                                    团队项目--尚宜家O2O项目（2016.3--2016.12）
                                 </div>
                                 <div className="item-info">
                                     <div className="item-desc">
                                         尚宜家是一个洗护O2O项目，运用移动web技术开发，功能涉及洗衣、洗鞋、奢侈品养护等，
-                                        用户可以通过移动终端（微信、APP）下单。（项目目前已下线，查看效果请点击Demo）
+                                        用户可以通过移动终端（微信、APP）下单。
                                     </div>
                                     <div className="item-img">
                                         <img src="http://swhzhuster.xin/images/my-CV/shangyijia1-small.png"
