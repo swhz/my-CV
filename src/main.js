@@ -3,7 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { render } from 'react-dom'
 
 // 引入React-Router模块
-import { Router, Route, Link, hashHistory, browserHistory, IndexRoute, Redirect, IndexLink } from 'react-router'
+import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router'
 
 // 引入Antd的导航组件
 import { Menu, Icon, Button,Modal } from 'antd'
