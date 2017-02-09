@@ -6,7 +6,7 @@ import { render } from 'react-dom'
 import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router'
 
 // 引入Antd的导航组件
-import { Menu, Icon, Button,Modal } from 'antd'
+import { Menu, Icon, Button, Modal } from 'antd'
 const SubMenu = Menu.SubMenu
 
 // 引入主体样式文件
@@ -27,7 +27,8 @@ class Sider extends React.Component {
             collapse: true,
             current: 'home',
             num: 0,
-            visible: false
+            visible: false,
+            direction: 1
         }
         this.onCollapseChange = this.onCollapseChange.bind(this)
         this.handleClick = this.handleClick.bind(this)
@@ -50,7 +51,7 @@ class Sider extends React.Component {
             current: newkey,
             num,
         })
-        if(height > width) {
+        if (height > width) {
             this.setState({
                 visible: true
             })
@@ -69,13 +70,16 @@ class Sider extends React.Component {
                     num = index
                 }
             })
+            let direction = 0
+            direction = (prevState.num - num) > 0 ? 0 : 1
             this.setState({
                 current: newkey,
                 num,
+                direction,
             })
         }
     }
- 
+
     //路由切换时，初始化容器滚动条位置
     handleClick() {
         this.scroll.scrollTop = 0
@@ -96,7 +100,7 @@ class Sider extends React.Component {
     }
 
     render() {
-        const { collapse, num } = this.state
+        const { collapse, num, direction } = this.state
         const routerArray = ['/', '/about', '/skill', '/project', '/contact']
         return (
             <div className={collapse ? "layout-aside layout-aside-collapse" : "layout-aside"}>
@@ -162,13 +166,13 @@ class Sider extends React.Component {
                         </Link>
                     </div>
                 </div>
-                <div className="layout-main" ref={(div) => { this.scroll = div }}>
+                <div className={direction > 0 ? "layout-main" : "layout-main back"} ref={(div) => { this.scroll = div }}>
                     <ReactCSSTransitionGroup
                         transitionName="transitionWrapper"
                         component="div"
                         className="transitionWrapper"
-                        transitionEnterTimeout={500}
-                        transitionLeaveTimeout={500}>
+                        transitionEnterTimeout={1000}
+                        transitionLeaveTimeout={1000}>
                         <div key={this.props.location.pathname}
                             style={{ position: "absolute", width: "100%" }}>
                             {
@@ -180,7 +184,7 @@ class Sider extends React.Component {
                 <Modal title="" footer=""
                     visible={this.state.visible}
                     onCancel={this.handleCancel}>
-                    <p style={{textAlign:'center'}}>横屏浏览效果更佳哦！</p>
+                    <p style={{ textAlign: 'center' }}>横屏浏览效果更佳哦！</p>
                 </Modal>
             </div>
         )

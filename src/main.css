@@ -131,37 +131,67 @@
     transition: all .3s;
 }
 
-.transitionWrapper-enter{
+.layout-main .transitionWrapper-enter{
     opacity: 0.01;
-    transition: all 500ms ease;
-    transform: rotate(30deg);
+    transition: all 1000ms ease;
+    transform: translate3d(100%,0,-20px);
+    -webkit-transform: translate3d(100%,0,-20px);
+    -ms-transform: translate3d(100%,0,-20px);
+    /*transform: rotate(30deg);
     -webkit-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);*/
 }
- 
-.transitionWrapper-enter.transitionWrapper-enter-active{
-    opacity: 1;
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-}
- 
-.transitionWrapper-leave{
-    opacity: 1;
-    transition: all 500ms ease;
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-}
- 
-.transitionWrapper-leave.transitionWrapper-leave-active{
-    opacity: 0;
-    transform: rotate(-30deg);
+
+.layout-main.back .transitionWrapper-enter {
+   transform: translate3d(-100%,0,-20px);
+    -webkit-transform: translate3d(-100%,0,-20px);
+    -ms-transform: translate3d(-100%,0,-20px);
+    /*transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);*/
 }
  
-.transitionWrapper{
+.layout-main .transitionWrapper-enter.transitionWrapper-enter-active {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    /*transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);*/
+}
+ 
+.layout-main .transitionWrapper-leave{
+    opacity: 1;
+    transition: all 1000ms ease;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    /*transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);*/
+}
+ 
+.layout-main .transitionWrapper-leave.transitionWrapper-leave-active {
+    opacity: 0;
+    transform: translate3d(-100%,0,-20px);
+    -webkit-transform: translate3d(-100%,0,-20px);
+    -ms-transform: translate3d(-100%,0,-20px);
+    /*transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);*/
+}
+
+.layout-main.back .transitionWrapper-leave.transitionWrapper-leave-active {
+    transform: translate3d(100%,0,-20px);
+    -webkit-transform: translate3d(100%,0,-20px);
+    -ms-transform: translate3d(100%,0,-20px);
+    /*transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);*/
+}
+ 
+.layout-main .transitionWrapper{
     position: relative;
     height: 100%;
 }
