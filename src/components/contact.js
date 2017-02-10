@@ -51,12 +51,12 @@ export default class Contact extends React.Component {
                                 QQ:1479132837
                             </div>
                         </div>
-                        <a href="mailto:1479132837@qq.com" target="_blank" className="main-item">
+                        <a href="mailto:swhzhuster@outlook.com" target="_blank" className="main-item">
                             <div className="item-icon">
                                 <i className="iconfont icon-email"></i>
                             </div>
                             <div className="item-content">
-                                邮箱:1479132837@qq.com
+                                邮箱:swhzhuster@outlook.com
                             </div>
                         </a>
                     </div>
