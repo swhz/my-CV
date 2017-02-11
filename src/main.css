@@ -123,7 +123,7 @@
     bottom: 0;
     overflow-y: scroll;
     transition: all .3s;
-    background-color:skyblue;
+    background-color:#ddd;
 }
 
 .layout-aside-collapse .layout-main {
@@ -227,7 +227,7 @@
     width: 30vh;
     height: 30vh;
     box-sizing: border-box;
-    border: 10px solid dodgerblue;
+    border: 10px solid deepskyblue;
     border-radius: 50%;
 }
 
@@ -247,18 +247,19 @@
     font-weight: 600;
     text-shadow: 1px 2px deepskyblue,2px 4px lightskyblue;
     color:whitesmoke;
+    margin-bottom: 0.4em;
 }
 
 .home-container .my-word {
     font-size: 1.3em;
     font-weight: 400;
-    color:#eee;
+    color:dimgray;
 }
 
 .home-container .my-profession {
     font-size: 1.4em;
     font-weight: 500;
-    color: ghostwhite;
+    color: dimgray;
     margin: 0.2em 0;
 }
 
@@ -269,7 +270,7 @@
 }
 
 .home-container .my-email:hover {
-    color: antiquewhite;
+    color: whitesmoke;
 }
 
 .about-container .about-title, 
@@ -435,7 +436,7 @@
 }
 
 .contact-container a.main-item:hover .item-content {
-    color: antiquewhite;
+    color: whitesmoke;
 }
 
 .contact-container .item-icon {
@@ -465,7 +466,7 @@
 
 .contact-container .other-title {
     font-size: 0.6em;
-    color: whitesmoke;
+    color: ghostwhite;
     font-weight: 500;
     margin-bottom: 20px;
     position: relative;
