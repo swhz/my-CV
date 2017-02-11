@@ -1,5 +1,5 @@
 ## 个人简历
-基于react及antd的个人简历
+基于react、react router及antd的单页面（SPA）应用
 
 ## 演示地址
 demo: [http://swhzhuster.xin/my-CV](http://swhzhuster.xin/my-CV)
