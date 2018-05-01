@@ -4,7 +4,7 @@ const Home = () => {
     return (
             <div className="home-container">
                 <div className="avatar-img">
-                    <img src="http://swhzhuster.xin/images/my-CV/avatar.jpg" className="avatar" />
+                    <img src="https://swhz.github.io/my-CV/image/avatar.jpg" className="avatar" />
                 </div>
                 <div className="home-info">
                     <p className="my-name">舒伟增</p>

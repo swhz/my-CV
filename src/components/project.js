@@ -38,7 +38,7 @@ export default class Project extends React.Component {
                                     <a className="item-link" href="https://github.com/swhz/my-CV" target="_blank">
                                         <i className="iconfont icon-link"></i>源代码
                                     </a>
-                                    <a className="item-link" href="http://swhzhuster.xin/my-CV" target="_blank">
+                                    <a className="item-link" href="https://swhz.github.io/my-CV" target="_blank">
                                         <i className="iconfont icon-link"></i>Demo
                                     </a>
                                 </div>
@@ -48,8 +48,8 @@ export default class Project extends React.Component {
                                         Ant Design等库和框架设计，语法采用ES6、ES7，运用webpack等模块打包工具进行编译打包。
                                     </div>
                                     <div className="item-img">
-                                        <img src="http://swhzhuster.xin/images/my-CV/my-CV-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/my-CV.png"
+                                        <img src="http:///swhz.github.io/my-CV/image/my-CV-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/my-CV.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -71,23 +71,23 @@ export default class Project extends React.Component {
                                         （早于微信小程序上线），界面设计合理，交互效果良好。
                                     </div>
                                     <div className="item-img">
-                                        <img src="http://swhzhuster.xin/images/my-CV/maoyan1-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/maoyan1.png"
+                                        <img src="http://swhz.github.io/my-CV/image/maoyan1-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/maoyan1.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/maoyan2-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/maoyan2.png"
+                                        <img src="http://swhz.github.io/my-CV/image/maoyan2-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/maoyan2.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/maoyan3-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/maoyan3.png"
+                                        <img src="http://swhz.github.io/my-CV/image/maoyan3-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/maoyan3.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/maoyan4-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/maoyan4.png"
+                                        <img src="http://swhz.github.io/my-CV/image/maoyan4-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/maoyan4.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/maoyan5-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/maoyan5.png"
+                                        <img src="http://swhz.github.io/my-CV/image/maoyan5-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/maoyan5.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/maoyan6-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/maoyan6.png"
+                                        <img src="http://swhz.github.io/my-CV/image/maoyan6-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/maoyan6.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -108,17 +108,17 @@ export default class Project extends React.Component {
                                         模仿爱拼宝宝app的商城项目（受限于api，功能比较简单），界面设计参照官方app，交互效果良好。
                                     </div>
                                     <div className="item-img">
-                                        <img src="http://swhzhuster.xin/images/my-CV/aipin1-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/aipin1.png"
+                                        <img src="http://swhz.github.io/my-CV/image/aipin1-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/aipin1.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/aipin2-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/aipin2.png"
+                                        <img src="http://swhz.github.io/my-CV/image/aipin2-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/aipin2.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/aipin3-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/aipin3.png"
+                                        <img src="http://swhz.github.io/my-CV/image/aipin3-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/aipin3.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/aipin4-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/aipin4.png"
+                                        <img src="http://swhz.github.io/my-CV/image/aipin4-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/aipin4.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -140,14 +140,14 @@ export default class Project extends React.Component {
                                         游戏试玩良好，时钟稳步运行，Todolist配有简单的后台接口（json-server），可同步。
                                     </div>
                                     <div className="item-img">
-                                        <img src="http://swhzhuster.xin/images/my-CV/2048-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/2048.png"
+                                        <img src="http://swhz.github.io/my-CV/image/2048-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/2048.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/clock-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/clock.png"
+                                        <img src="http://swhz.github.io/my-CV/image/clock-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/clock.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/todolist-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/todolist.png"
+                                        <img src="http://swhz.github.io/my-CV/image/todolist-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/todolist.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -170,14 +170,14 @@ export default class Project extends React.Component {
                                         jquery以及canvas编写，游戏试玩效果良好。
                                     </div>
                                     <div className="item-img">
-                                         <img src="http://swhzhuster.xin/images/my-CV/2048g-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/2048g.png"
+                                         <img src="http://swhz.github.io/my-CV/image/2048g-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/2048g.png"
                                             onClick={this.showModal} />
-                                         <img src="http://swhzhuster.xin/images/my-CV/snake-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/snake.png"
+                                         <img src="http://swhz.github.io/my-CV/image/snake-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/snake.png"
                                             onClick={this.showModal} />
-                                         <img src="http://swhzhuster.xin/images/my-CV/craps-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/craps.png"
+                                         <img src="http://swhz.github.io/my-CV/image/craps-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/craps.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -194,41 +194,41 @@ export default class Project extends React.Component {
                                         用户可以通过移动终端（微信、APP）下单。
                                     </div>
                                     <div className="item-img">
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia1-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia1.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia1-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia1.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia2-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia2.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia2-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia2.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia3-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia3.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia3-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia3.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia4-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia4.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia4-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia4.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia5-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia5.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia5-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia5.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia6-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia6.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia6-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia6.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia7-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia7.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia7-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia7.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia8-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia8.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia8-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia8.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia9-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia9.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia9-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia9.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia10-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia10.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia10-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia10.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia11-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia11.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia11-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia11.png"
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/shangyijia12-small.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/shangyijia12.png"
+                                        <img src="http://swhz.github.io/my-CV/image/shangyijia12-small.png"
+                                            data-src="http://swhz.github.io/my-CV/image/shangyijia12.png"
                                             onClick={this.showModal} />
                                     </div>
                                 </div>
@@ -249,20 +249,20 @@ export default class Project extends React.Component {
                                         获得了导师的赞赏。（下图是部分计算结果图表）
                                     </div>
                                     <div className="item-img">
-                                        <img src="http://swhzhuster.xin/images/my-CV/matlab1.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/matlab1.png"
+                                        <img src="http://swhz.github.io/my-CV/image/matlab1.png"
+                                            data-src="http://swhz.github.io/my-CV/image/matlab1.png"
                                             style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/matlab2.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/matlab2.png"
+                                        <img src="http://swhz.github.io/my-CV/image/matlab2.png"
+                                            data-src="http://swhz.github.io/my-CV/image/matlab2.png"
                                             style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/matlab3.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/matlab3.png"
+                                        <img src="http://swhz.github.io/my-CV/image/matlab3.png"
+                                            data-src="http://swhz.github.io/my-CV/image/matlab3.png"
                                             style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
-                                        <img src="http://swhzhuster.xin/images/my-CV/matlab4.png"
-                                            data-src="http://swhzhuster.xin/images/my-CV/matlab4.png"
+                                        <img src="http://swhz.github.io/my-CV/image/matlab4.png"
+                                            data-src="http://swhz.github.io/my-CV/image/matlab4.png"
                                             style={{ height: 140, width: 'auto' }}
                                             onClick={this.showModal} />
                                     </div>

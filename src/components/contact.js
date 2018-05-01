@@ -32,7 +32,7 @@ export default class Contact extends React.Component {
                 <div className="contact-content">
                     <div className="contact-main">
                         <div className="main-item" 
-                        data-src="http://swhzhuster.xin/images/my-CV/mmqrcode1485960438307.png"
+                        data-src="http://swhz.github.io/my-CV/image/mmqrcode1485960438307.png"
                         onClick={this.showModal}>
                             <div className="item-icon">
                                 <i className="iconfont icon-weixin"></i>
@@ -42,7 +42,7 @@ export default class Contact extends React.Component {
                             </div>
                         </div>
                         <div className="main-item" 
-                        data-src="http://swhzhuster.xin/images/my-CV/qrcode_1485960492292.jpg"
+                        data-src="http://swhz.github.io/my-CV/image/qrcode_1485960492292.jpg"
                         onClick={this.showModal}>
                             <div className="item-icon">
                                 <i className="iconfont icon-qq"></i>
